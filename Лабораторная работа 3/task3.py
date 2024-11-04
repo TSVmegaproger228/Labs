@@ -55,8 +55,7 @@ main_str = """
 Под ним сидел, и кот учёный
 Свои мне сказки говорил.
 """
-
 # TODO Распечатайте в столбик букву и её частоту в тексте
-letters = calculate_frequency(count_letters(main_str))
-for line in letters.items():
+characters = calculate_frequency(count_letters(main_str))
+for line in characters.items():
     print(f'{line[0]}: {round(line[1], 2)}')
