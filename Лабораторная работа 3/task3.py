@@ -55,6 +55,7 @@ main_str = """
 Под ним сидел, и кот учёный
 Свои мне сказки говорил.
 """
+
 # TODO Распечатайте в столбик букву и её частоту в тексте
 characters = calculate_frequency(count_letters(main_str))
 for line in characters.items():
