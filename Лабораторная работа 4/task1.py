@@ -5,9 +5,12 @@ import json
 def task(filename) -> float:
     with open(filename) as file:
         data = json.load(file)
-
-    return sum([round(numberscouple['score'] * numberscouple['weight'], 3)
-                for numberscouple in data])
+        total = 0
+        for numberscouple in data:
+            product = numberscouple['score'] * numberscouple['weight']
+            total += product
+    roundtotal = round(total, 3)
+    return roundtotal
 
 
 book = 'input.json'
